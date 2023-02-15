@@ -1,0 +1,191 @@
+html
+{
+    background-color: rgb(246, 246, 247);
+}
+
+html, body, main {
+    padding: 0;
+    margin: 0;
+}
+
+header, footer {
+    display: flex;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    padding: 0px;
+    margin: 0px;
+    color:rgb(32, 34, 35);
+    font-weight: bold;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+
+/* Header */
+header {
+  width: 100%;
+  height: 8rem;
+  text-align: center;
+  display: flex;
+}
+
+header .logo {
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .logo img {
+    position: relative;
+    width: 260px;
+    height: auto;
+    bottom: 3rem;
+    left: 1rem;
+}
+
+header ul {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin: 0 auto;
+   padding-top: 1rem;
+}
+
+header ul li {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    font-size: large;
+    display: inline-block;
+    padding: 1px 1rem;
+}
+
+header ul li a {
+    color: rgb(32, 34, 35);
+    text-decoration: none;
+}
+
+
+/* Jumbotron with Mission */
+main div.jumbotron {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+main div.image-container {
+    width: 70%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+
+main div.image-container img {
+    width: 100%;
+    border-radius: 7%;
+    border: 1px solid lightgray;
+} 
+
+main div.image-container div.banner {
+    background-color: rgba(180, 99, 166, .75);
+    align-items: center; 
+    line-height: 1.2;  
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 627px) {
+    main div.image-container div.banner h1 {
+        font-size: 1.1rem;
+    }
+
+    main div.image-container div.banner h3 {
+        font-size: .8rem;
+    }
+}
+
+
+/* Learn to Code Section and Our Team Sections */
+div.ltc-p {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    color:rgb(32, 34, 35);
+    font-weight: bold;
+    font-family: 'Anonymous Pro', monospace;
+    margin-top: 4rem;
+    background-color: rgba(211, 211, 211, .2);
+}
+
+.learn-to-code, .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ltc-image-container, .team-image-container {
+    flex-basis: 45%;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: rgba(211, 211, 211, .19);
+    border-radius: 10%;
+
+}
+
+.ltc-image-container img, .team-image-container img {
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 7%;
+    max-height: 100px;
+    width: auto;
+}
+
+.ltc-text, .team-text {
+    line-height: 1.2;
+    text-align: center;
+}
+
+.ltc-text h1, .team-text h1 {
+    padding: .5rem 0;
+}
+
+.ltc-text h2, .team-text h2 {
+    padding-bottom: .5rem;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(92, 73, 120);
+    width: 100%;
+    height: 5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    float: left;
+    font-family: 'Anonymous Pro', monospace;
+    color: lightgray;
+    font-weight: 700;
+}
